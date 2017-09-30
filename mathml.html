@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MathML</title>
+    <link rel="stylesheet" type="text/css" href="css/artikler.css" />
+    <script src="css/scripts.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Oblig 2</h1>
+        <a class="navKnapper" href="mathml.html">MathML</a>
+        <a class="navKnapper" href="svg.html">SVG</a>
+        <a id="hjemmeKnappLink" href="index.html">
+          <img id="hjemmeKnapp" src="css/home.svg" href="index.html" width="25px" height="25px" />
+        </a>
+        <a class="navKnapper" href="git.html">GitHub</a>
+        <a class="navKnapper" href="kalender.html">Kalender</a>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <div class="artikkel1">
+        <article class="artikkelTekst">
+          <h2>Mathematical Markup Language</h2>
+          <p>
+            MathML er et markup språk som representerer matematiske formeler
+            på en datamaskin. Disse språkene gjør det lettere å kommunisere matematiske
+            formler på tvers forskjellige programvarer. MathML er en del av HTML5 og blir også brukt
+            av andre programmer som blant annet OpenOffce. En liste over programmer som bruker eller
+            kan redigere matematiske uttrykk via MathML kan finnes <a href="https://www.w3.org/wiki/Math_Tools">her.</a>
+          </p>
+          <p>
+            Ikke alle nettlesere støtter MathML. For å få støtte på mest mulige nettlesere, kan et
+            javascript library som heter MathJax brukes. Dette er nødvendig hvis man skal
+            vise MathML på Blink browsere, som blant annet Chrome og Opera.
+          </p>
+          <p>
+            Formlene nedenfor ble skrevet i programmet <a href="http://www.dessci.com/en/products/mathtype/">MathType</a>, der man enkelt kan skrive inn en matematisk
+            formel, før programmet eksporterer MathML koden som så kan skrives inner på nettsiden.
+          </p>
+
+
+          <math mode="display">
+            <mi>a</mi>
+            <msup>
+              <mi>x</mi>
+              <mn>2</mn>
+            </msup>
+            <mo>+</mo>
+            <mi>b</mi>
+            <mi>x</mi>
+            <mo>+</mo>
+            <mi>c</mi>
+            <mo>=</mo>
+            <mn>0</mn>
+          </math>
+          <math mode="display">
+            <mi>x</mi> <mo>=</mo>
+            <mrow>
+              <mfrac>
+                <mrow>
+                  <mo>&#x2212;</mo>
+                  <mi>b</mi>
+                  <mo>&#x00B1;</mo>
+                  <msqrt>
+                    <msup><mi>b</mi><mn>2</mn></msup>
+                    <mo>&#x2212;</mo>
+                    <mn>4</mn><mi>a</mi><mi>c</mi>
+                  </msqrt>
+                </mrow>
+                <mrow> <mn>2</mn><mi>a</mi> </mrow>
+              </mfrac>
+            </mrow>
+            <mtext>.</mtext>
+          </math>
+          <math mode="display">
+            <mrow>
+            <mfrac>
+            <mrow>
+            <mi>x</mi><mo>+</mo><mn>1</mn>
+            </mrow>
+            <mrow>
+            <mn>3</mn><mi>y</mi>
+            </mrow>
+            </mfrac>
+            </mrow>
+          </math>
+          <math mode="display">
+           <mrow>
+            <msqrt>
+             <mrow>
+              <msup>
+               <mi>a</mi>
+               <mn>2</mn>
+              </msup>
+              <mo>+</mo><msup>
+               <mi>b</mi>
+               <mn>2</mn>
+              </msup>
+              </mrow>
+            </msqrt>
+            </mrow>
+          </math>
+
+        </article>
+        <article id="mathmlbilde" class="artikkelBilde">
+          <!-- Her er det et bilde spesifisert i CSS -->
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

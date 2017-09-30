@@ -1,0 +1,180 @@
+@import "normalize.css";
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+head {
+  display: none;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+header {
+  height: 120px;
+}
+
+#MathJax-Element-1, #MathJax-Element-2, #MathJax-Element-3, #MathJax-Element-4, #MathJax-Element-5 {
+  display: none;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 120px;
+  opacity: 0.95;
+  background-color: white;
+  text-align: center;
+  border-bottom: 2px solid black;
+  z-index: 1;
+}
+
+header nav a {
+  margin: 0 3em;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
+
+#hjemmeKnappLink {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+
+header nav .navKnapper:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header nav a:focus {
+  color: blue;
+}
+
+header nav a:active {
+  position: relative;
+  bottom: 5px;
+}
+
+img#hjemmeKnapp {
+  width: 25px;
+  height: 25px;
+  display: inline;
+  position: relative;
+  right: 48px;
+  margin: 0 3em;
+}
+
+img#hjemmeKnapp:hover {
+  cursor: pointer;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+img#hjemmeKnapp:active {
+  position: relative;
+  bottom: 5px;
+}
+
+main.wrapper {
+  height: 1100px;
+  width: 100%;
+  max-width: 1100px;
+  max-height: 1100px;
+  margin: 5px auto 50px;
+  z-index: 2;
+}
+
+main div {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: 15px;
+}
+
+main div .artikkelTekst {
+  float:left;
+  height: 50%;
+  width: 50%;
+}
+
+main div .artikkelBilde {
+  float:left;
+  height: 80%;
+  width: 50%;
+}
+
+main div article h2 {
+  text-align: center;
+}
+
+main div article p {
+  font-size: 20px;
+  padding: 10px 12px;
+  line-height: 150%;
+}
+
+main div article p a:visited {
+  color: darkseagreen;
+}
+
+main div article p a:link {
+  color: brown;
+}
+
+main div article#mathmlbilde {
+  background-image: url(mattebok.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main div article#svgbilde {
+  background-image: url(mattebok.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main div article#gitbilde {
+  background-image: url(mattebok.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.omsidenbilder {
+  float: left;
+}
+
+.omsidenartikkel {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th, tr, td {
+  border: 1px solid black;
+  padding: 3px;
+}

@@ -1,0 +1,278 @@
+@import "normalize.css";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+head {
+  display: none;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+header {
+  height: 120px;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 120px;
+  opacity: 0.95;
+  background-color: white;
+  text-align: center;
+  border-bottom: 2px solid black;
+  z-index: 50;
+}
+
+header nav a {
+  margin: 0 3em;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+#hjemmeKnappLink {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+
+header nav .navKnapper:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header nav a:active {
+  position: relative;
+  bottom: 5px;
+}
+
+img#hjemmeKnapp {
+  width: 25px;
+  height: 25px;
+  display: inline;
+  position: relative;
+  right: 48px;
+  margin: 0 3em;
+}
+
+img#hjemmeKnapp:hover {
+  cursor: pointer;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+img#hjemmeKnapp:active {
+  position: relative;
+  bottom: 5px;
+}
+
+main.wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1100px;
+  max-height: 1100px;
+  margin: 5px auto 50px;
+  background-color: ghostwhite;
+  z-index: 2;
+}
+
+article {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  float: left;
+  text-align: center;
+}
+
+.artikkelRad {
+  height: 50%;
+  width: 100%;
+}
+
+#artikkelMathml {
+  background-image: url(../bilder/matte.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#artikkelSVG {
+  background-image: url(../bilder/svg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#artikkelGitHub {
+  background-image: url(../bilder/octocat.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#artikkelKalender {
+  background-image: url(../bilder/kalender.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+article h2 {
+  color: white;
+  position: relative;
+  top: 15%;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+hr.linjeHomepage {
+  width: 40%;
+  position: relative;
+  top: 15%;
+}
+
+article a {
+  position: relative;
+  opacity: 1;
+  top: 15%;
+  color: orange;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+
+#artikkelMathml:hover, #artikkelSVG:hover, #artikkelGitHub:hover, #artikkelKalender:hover {
+  opacity: 0.7;
+  transition-duration: 0.4s;
+}
+
+footer {
+  background-color: white;
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 1100px;
+  height: 75px;
+  z-index: 0;
+}
+
+footer nav {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+footer nav a {
+  font-size: 17px;
+  position: relative;
+  top: 15%;
+  color: darkblue;
+  text-decoration: none;
+  z-index: 0;
+}
+
+footer nav hr {
+  position: relative;
+  max-width: 75%;
+  top: 15%;
+}
+
+footer nav ul {
+  max-width: 1100px;
+  width: 100%;
+  max-height: 75px;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline-block;
+  position: relative;
+  top: 25%;
+  margin: 0 20px;
+}
+
+footer nav ul li a {
+  font-size: 14px;
+  color: darkblue;
+}
+
+footer nav a:hover {
+  color: green;
+}
+
+footer nav ul li a:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+section#info {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  max-width: 700px;
+}
+
+div#infoContainer {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  color: black;
+  padding: 3px;
+}
+
+div#infoContainer ul ul li {
+  margin-top: 2px;
+}
+
+.listeinfoboks {
+  float:left;
+  margin-right: 35px;
+}
+
+ul {
+  padding: 0;
+}
+
+.forelesningTittel {
+  font-weight: bold;
+}
+
+p#tidtiloblig {
+  font-weight: bold;
+}
+
+section#kalender {
+  width: 800px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
