@@ -111,7 +111,6 @@ main div {
 
 main div .artikkelTekst {
   float:left;
-  height: 50%;
   width: 50%;
 }
 
@@ -147,16 +146,13 @@ main div article#mathmlbilde {
 }
 
 main div article#svgbilde {
-  background-image: url(mattebok.svg);
+  background-image: url(../bilder/norge.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 main div article#gitbilde {
-  background-image: url(mattebok.svg);
+  background-image: url(../bilder/tre.svg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
 }
 
@@ -177,4 +173,8 @@ table {
 th, tr, td {
   border: 1px solid black;
   padding: 3px;
+}
+
+tr:nth-of-type(even) {
+  color: darkorange;
 }
