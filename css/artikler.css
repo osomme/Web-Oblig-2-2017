@@ -73,6 +73,19 @@ header nav a:active {
   bottom: 5px;
 }
 
+.fa {
+  font-size: 25px;
+}
+
+.fa:hover {
+  color: orange;
+}
+
+.fa:active {
+  position:relative;
+  bottom: 5px;
+}
+
 img#hjemmeKnapp {
   width: 25px;
   height: 25px;
@@ -136,6 +149,10 @@ main div article p a:visited {
 
 main div article p a:link {
   color: brown;
+}
+
+main div article p a:hover {
+  color: green;
 }
 
 main div article#mathmlbilde {

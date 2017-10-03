@@ -70,6 +70,19 @@ header nav a:active {
   bottom: 5px;
 }
 
+.fa {
+  font-size: 25px;
+}
+
+.fa:hover {
+  color: orange;
+}
+
+.fa:active {
+  position:relative;
+  bottom: 5px;
+}
+
 img#hjemmeKnapp {
   width: 25px;
   height: 25px;
@@ -228,11 +241,6 @@ footer nav ul li a {
 
 footer nav a:hover {
   color: green;
-}
-
-footer nav ul li a:hover {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 
 section#info {

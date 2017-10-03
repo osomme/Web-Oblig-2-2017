@@ -1,18 +1,5 @@
-window.onload = oppstart;
-
-function oppstart() {
-  setInterval(tidTilEksamen, 1000);
-  document.getElementById("hjemmeKnapp").onmouseover = gulHomeButton;
-  document.getElementById("hjemmeKnapp").onmouseout = svartHomeButton;
-}
-
-function gulHomeButton() {
-  document.getElementById("hjemmeKnapp").src = "bilder/homeorange.svg";
-}
-
-function svartHomeButton() {
-  document.getElementById("hjemmeKnapp").src = "bilder/home.svg";
-}
+window.onload = tidTilEksamen;
+setInterval(tidTilEksamen, 1000);
 
 function tidTilEksamen() {
   var output = document.getElementById("tidtiloblig");
@@ -26,11 +13,11 @@ function tidTilEksamen() {
   var forskjellITimer = Math.round((sekunder % 86400) / 3600);
 
   if (!output) {
-    console.log("Timeren lastes ikke fordi outputelementet (tidtiloblig) ikke finnes på denne siden")
+    clearInterval(tidTilEksamen);
   } else if (sekunder < 3600) {
     if (sekunder <= 60) {
       output.innerHTML = "Det er " + forskjellIDager +
-        " dager og " + forskjellIMinutter + " minutt igjen til fristen på oblig 3 går ut.";
+        " dager og " + sekunder + " sekunder igjen til fristen på oblig 3 går ut.";
     } else {
       output.innerHTML = "Det er " + forskjellIDager +
         " dager og " + forskjellIMinutter + " minutter igjen til fristen på oblig 3 går ut.";
