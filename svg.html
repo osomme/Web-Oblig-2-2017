@@ -1,72 +1,67 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Git og GitHub</title>
-    <script src="https://use.fontawesome.com/c53f53fb76.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/artikler.css">
-    <script src="css/scripts.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <h1>Oblig 2</h1>
-        <a class="navKnapper" href="mathml.html">MathML</a>
-        <a class="navKnapper" href="svg.html">SVG</a>
-        <a id="hjemmeKnappLink" href="index.html">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Git og GitHub</title>
+  <script src="https://use.fontawesome.com/c53f53fb76.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/artikler.css">
+  <script src="css/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Oblig 2</h1>
+      <a class="navKnapper" href="mathml.html">MathML</a>
+      <a class="navKnapper" href="svg.html">SVG</a>
+      <a id="hjemmeKnappLink" href="index.html">
           <i class="fa fa-home" aria-hidden="true"></i>
         </a>
-        <a class="navKnapper" href="git.html">GitHub</a>
-        <a class="navKnapper" href="kalender.html">Kalender</a>
-      </nav>
-    </header>
-    <section class="wrapper">
-      <div class="artikkel1">
-        <article class="artikkelTekst">
-          <h2>Scalable Vector Graphics</h2>
-          <p>
-            SVG er et vektorbasert filformat som kan generere former og farger ut i fra
-            et markup språk. Man kan derfor skape SVG bilder i blant annet en teksteditor.
-            SVG bruker CSS for styling og JavaScript for scripting. SVG filer kan
-            være interaktive og kan i tillegg generere animasjoner.
-          </p>
-          <p>
-            Tradisjonelle bitmap bilder består av et gitt antall piksler der hver piksel har
-            sin egen farge. Dette gjør at filene blir større og skalerer ikke bra over flere størrelser.
-            Hvis man tar et bitmap bilde som har en oppløsning på 400x400 og strekker det ut
-            på et område på størrelsen 1200x1200, vil bildet se betraktelig dårligere ut fordi pikslene
-            blir strukket ut.
-          </p>
-          <p>
-            Med vektorbaserte bilder vil bildet skalere uansett hvor store de blir. Dette er fordi
-            de tegner former og linjer, ikke per piksel. Det er på grunn av dette at man
-            kan lage eller redigere vektorbilder i teksteditorer.
-          </p>
-          <p>
-            Eksemplene nedenfor har jeg først hentet fra <a href="https://www.w3schools.com/graphics/svg_examples.asp">w3schools</a>
-            før jeg har modifisert dem.
-          </p>
-        </article>
-        <article id="svgbilde" class="artikkelBilde">
-          <!-- Her er det et bilde spesifisert i CSS -->
-        </article>
-        <div id="svgbilder">
-          <svg width="400" height="400">
+      <a class="navKnapper" href="git.html">GitHub</a>
+      <a class="navKnapper" href="kalender.html">Kalender</a>
+    </nav>
+  </header>
+  <section class="wrapper">
+    <div class="artikkel1">
+      <article class="artikkelTekst">
+        <h2>Scalable Vector Graphics</h2>
+        <p>
+          SVG er et vektorbasert filformat som kan generere former og farger ut i fra et markup språk. Man kan derfor skape SVG bilder i blant annet en teksteditor. SVG bruker CSS for styling og JavaScript for scripting. SVG filer kan være interaktive og kan i
+          tillegg generere animasjoner.
+        </p>
+        <p>
+          Tradisjonelle bitmap bilder består av et gitt antall piksler der hver piksel har sin egen farge. Dette gjør at filene blir større og skalerer ikke bra over flere størrelser. Hvis man tar et bitmap bilde som har en oppløsning på 400x400 og strekker det
+          ut på et område på størrelsen 1200x1200, vil bildet se betraktelig dårligere ut fordi pikslene blir strukket ut.
+        </p>
+        <p>
+          Med vektorbaserte bilder vil bildet skalere uansett hvor store de blir. Dette er fordi de tegner former og linjer, ikke per piksel. Det er på grunn av dette at man kan lage eller redigere vektorbilder i teksteditorer.
+        </p>
+        <p>
+          Eksemplene nedenfor har jeg først hentet fra <a href="https://www.w3schools.com/graphics/svg_examples.asp">w3schools</a> før jeg har modifisert dem.
+        </p>
+      </article>
+      <article id="svgbilde" class="artikkelBilde">
+        <!-- Her er det et bilde spesifisert i CSS -->
+      </article>
+      <div id="svgbilder">
+        <svg width="400" height="400">
             <circle cx="200" cy="200" r="150"
             stroke="green" stroke-width="8" fill="orange" />
             <polygon points="200,20 80,396 380,156 20,156 320,396"
             style="fill:black; stroke-width:2;" />
-          </svg>
-          <svg id="rodboks" width="200" height="200">
+        </svg>
+        <svg id="rodboks" width="200" height="200">
             <rect width="200" height="200" style="fill:red;stroke-width:10;stroke:red" />
             <rect x="20" y="20" width="40" height="40" style="fill:blue;stroke:blue" />
             <rect x="140" y="20" width="40" height="40" style="fill:blue;stroke:blue" />
             <rect x="20" y="140" width="40" height="40" style="fill:blue;stroke:blue" />
             <rect x="140" y="140" width="40" height="40" style="fill:blue;stroke:blue" />
             <rect x="60" y="60" width="80" height="80" style="fill:green;stroke:green" />
-          </svg>
-        </div>
+        </svg>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>
