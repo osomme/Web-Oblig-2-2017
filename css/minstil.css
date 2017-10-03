@@ -48,8 +48,6 @@ header nav a {
   color: black;
   display: inline-block;
   text-decoration: none;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
   font-weight: bold;
 }
 
@@ -103,7 +101,7 @@ img#hjemmeKnapp:active {
   bottom: 5px;
 }
 
-main.wrapper {
+section.wrapper {
   height: 100%;
   width: 100%;
   max-width: 1100px;
@@ -182,6 +180,7 @@ article a {
 #artikkelMathml:hover, #artikkelSVG:hover, #artikkelGitHub:hover, #artikkelKalender:hover {
   opacity: 0.7;
   transition-duration: 0.4s;
+  border: 10px solid orange;
 }
 
 footer {
@@ -251,7 +250,6 @@ section#info {
 }
 
 div#infoContainer {
-  margin: 0 auto;
   height: 100%;
   width: 100%;
   color: black;
@@ -262,17 +260,26 @@ div#infoContainer ul ul li {
   margin-top: 2px;
 }
 
-.listeinfoboks {
+table {
+  border-collapse: separate;
+  border-spacing: 35px 0;
+  margin-top: 14px;
+  display: table;
   float:left;
-  margin-right: 35px;
 }
 
-ul {
+tbody {
+  display: table-row-group;
+}
+
+tr {
+  display: table-row;
+}
+
+th, td {
+  text-align:left;
+  display: table-cell;
   padding: 0;
-}
-
-.forelesningTittel {
-  font-weight: bold;
 }
 
 p#tidtiloblig {

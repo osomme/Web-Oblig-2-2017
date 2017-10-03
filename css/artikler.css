@@ -47,8 +47,6 @@ header nav a {
   color: black;
   display: inline-block;
   text-decoration: none;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
   font-weight: bold;
 }
 
