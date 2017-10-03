@@ -20,15 +20,18 @@ head {
   display: none;
 }
 
+/* Overskriften i header */
 h1 {
   color: black;
   text-align: center;
 }
 
+/* Høyde på header */
 header {
   height: 120px;
 }
 
+/* Bestemmer posisjonen, utseende på headeren */
 nav.navbar {
   position: fixed;
   top: 0;
@@ -43,6 +46,7 @@ nav.navbar {
   z-index: 50;
 }
 
+/* Teksten som står i headeren */
 header nav a {
   margin: 0 3em;
   color: black;
@@ -51,13 +55,13 @@ header nav a {
   font-weight: bold;
 }
 
+/* Posisjonen til hjemmeikonet */
 #hjemmeKnappLink {
-  width: 25px;
-  height: 25px;
   position: relative;
-  top: 5px;
+  top: 2px;
 }
 
+/* Bestemmer oppførselen når du tar musen over linkene i navbaren */
 header nav .navKnapper:hover {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -66,10 +70,6 @@ header nav .navKnapper:hover {
 header nav a:active {
   position: relative;
   bottom: 5px;
-}
-
-.fa {
-  font-size: 25px;
 }
 
 .fa:hover {
@@ -81,26 +81,12 @@ header nav a:active {
   bottom: 5px;
 }
 
-img#hjemmeKnapp {
-  width: 25px;
-  height: 25px;
-  display: inline;
-  position: relative;
-  right: 48px;
-  margin: 0 3em;
+/* Størrelsen på hjemmeikonet */
+.fa {
+  font-size: 25px;
 }
 
-img#hjemmeKnapp:hover {
-  cursor: pointer;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-img#hjemmeKnapp:active {
-  position: relative;
-  bottom: 5px;
-}
-
+/* Mainwrapperen til alt innhold som ikke er navbar eller footer */
 section.wrapper {
   height: 100%;
   width: 100%;
@@ -111,6 +97,7 @@ section.wrapper {
   z-index: 2;
 }
 
+/* Denne er for hver av de fire boksene på hovedsiden */
 article {
   width: 50%;
   height: 100%;
@@ -119,16 +106,17 @@ article {
   text-align: center;
 }
 
+/* Denne er for de to radene som utgjør wrapperen til artiklene */
 .artikkelRad {
   height: 50%;
   width: 100%;
 }
 
+/* Bakgrunnsbildet til de fire boksene */
 #artikkelMathml {
   background-image: url(../bilder/matte.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 #artikkelSVG {
@@ -152,6 +140,7 @@ article {
   background-position: center;
 }
 
+/* Bestemmer størrelse og farge til teksten i de fire boksene */
 article h2 {
   color: white;
   position: relative;
@@ -175,14 +164,13 @@ article a {
   font-weight: 600;
 }
 
-
-
+/* Styrer oppførsel når musen er over artiklene */
 #artikkelMathml:hover, #artikkelSVG:hover, #artikkelGitHub:hover, #artikkelKalender:hover {
   opacity: 0.7;
   transition-duration: 0.4s;
-  border: 10px solid orange;
 }
 
+/* Posisjon til footer */
 footer {
   background-color: white;
   position: relative;
@@ -195,6 +183,7 @@ footer {
   z-index: 0;
 }
 
+/* Wrapperen til innholdet i footer */
 footer nav {
   min-height: 100%;
   height: 100%;
@@ -202,6 +191,7 @@ footer nav {
   text-align: center;
 }
 
+/* Linkene i footeren */
 footer nav a {
   font-size: 17px;
   position: relative;
@@ -211,12 +201,14 @@ footer nav a {
   z-index: 0;
 }
 
+/* Linja som splitter linkene */
 footer nav hr {
   position: relative;
   max-width: 75%;
   top: 15%;
 }
 
+/* Linkene under linja i footer */
 footer nav ul {
   max-width: 1100px;
   width: 100%;
@@ -242,6 +234,7 @@ footer nav a:hover {
   color: green;
 }
 
+/* Wrapperen til info om forelesningstider og innleveringsfrist i footeren */
 section#info {
   margin: 0 auto;
   width: 100%;
@@ -256,10 +249,7 @@ div#infoContainer {
   padding: 3px;
 }
 
-div#infoContainer ul ul li {
-  margin-top: 2px;
-}
-
+/* Tabellen som viser oversikt over timeplan, */
 table {
   border-collapse: separate;
   border-spacing: 35px 0;
@@ -282,10 +272,12 @@ th, td {
   padding: 0;
 }
 
+/* Teksten som viser tid til neste oblig frist */
 p#tidtiloblig {
   font-weight: bold;
 }
 
+/* Bredden og posisjonen til kalenderen på kalender.html */
 section#kalender {
   width: 800px;
   max-width: 1000px;
