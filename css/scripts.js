@@ -7,11 +7,11 @@ function oppstart() {
 }
 
 function gulHomeButton() {
-  document.getElementById("hjemmeKnapp").src = "css/homeorange.svg";
+  document.getElementById("hjemmeKnapp").src = "bilder/homeorange.svg";
 }
 
 function svartHomeButton() {
-  document.getElementById("hjemmeKnapp").src = "css/home.svg";
+  document.getElementById("hjemmeKnapp").src = "bilder/home.svg";
 }
 
 function tidTilEksamen() {
